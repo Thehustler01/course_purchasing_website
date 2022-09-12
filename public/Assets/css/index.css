@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
 }
-/* update_2 */
 html{
     scroll-behavior: smooth;
 }
@@ -79,19 +78,23 @@ p{
 
 
 /* navigation bar  */
+
 #navbar{
-    position: relative;
+    position: sticky;
     display: flex;
     align-items: center;
     height: 60px;
+    top: 0px;
+    z-index: 100;
 }
 #navbar::before{
     content: '';
-    background-color: white;
+    background-color: #cfcfdb;
     position: absolute;
-    height: 10%;
+    height: 100%;
     width: 100%;
     z-index: -1;
+    opacity: 0.5;
 }
 
 /* navigation bar :logo */
@@ -164,7 +167,6 @@ p{
     text-decoration: none;
 
 }
-
 
 
 
@@ -267,8 +269,8 @@ p{
 }
 .btn4{
     position: absolute;
-    right: 18rem;
-    top: 50px;
+    right: 15rem;
+    top: 120px;
     border-color:#3434ff;
     color: #3434ff;
     border-radius: 4px;
@@ -293,7 +295,7 @@ p{
 
 #course_content{
     position: relative;
-    top: 30px;
+    top: 100px;
     left: 80px;
     width: 75em;
     height: 45em;
@@ -687,9 +689,19 @@ p{
 /* ------------------------------------------------------------------------------------------- */
 
 
-
+#event{
+    top: 80px;
+    position: relative;
+    left: 110px;
+    width: 60rem;
+    height: 15rem;
+}
+#event button{
+    top: 100px;
+}
 #event_content{
     position: relative;
+    top: 100px;
     width: 70em;
     height: 18em;
     margin-left: 110px;
